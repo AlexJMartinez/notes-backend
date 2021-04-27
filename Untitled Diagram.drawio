@@ -1,1 +1,34 @@
-<mxfile host="app.diagrams.net" modified="2021-04-27T02:35:56.300Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36" version="14.6.6" etag="FRxxu_bpnLlQ-cSmeLZ9" type="github"><diagram id="bQiiP0Uex-nfbaeRGmkY">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-04-27T02:45:17.018Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36" etag="XxqQJPLNLDOxmPAHORLp" version="14.6.6" type="github">
+  <diagram id="bQiiP0Uex-nfbaeRGmkY" name="Page-1">
+    <mxGraphModel dx="781" dy="434" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="s0B1i0MKlRhGH66B7ktx-1" value="&lt;font style=&quot;font-size: 18px&quot;&gt;User&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="90" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s0B1i0MKlRhGH66B7ktx-2" value="&lt;font style=&quot;font-size: 18px&quot;&gt;Note&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="110" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="s0B1i0MKlRhGH66B7ktx-5" value="has_many notes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="37.5" y="140" width="135" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="s0B1i0MKlRhGH66B7ktx-7" value="belongs_to user" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="335" y="140" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="s0B1i0MKlRhGH66B7ktx-8" value="name - string&lt;br&gt;img_url - string" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="45" y="170" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="s0B1i0MKlRhGH66B7ktx-9" value="title - string&lt;br&gt;content - text&lt;br&gt;user_id - integer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="180" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="s0B1i0MKlRhGH66B7ktx-10" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="120" as="sourcePoint" />
+            <mxPoint x="180" y="119.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
