@@ -8,3 +8,5 @@
 
 
 alex = User.create(name: "Alex", img_url: "https://payload.cargocollective.com/1/0/7685/13800970/prt_1551127842_2x.jpg")
+
+tuesdayNote = Note.create(title: "Todays focus", content: "Work on flatiron JS project!", user_id: 7)
