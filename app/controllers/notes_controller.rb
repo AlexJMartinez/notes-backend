@@ -1,8 +1,8 @@
 class NotesController < ApplicationController
 
     def index 
-        notes = Notes.all
-        render json: notes
+        notes = Note.all
+        render json: NoteSerializer.new(notes)
     end
 
     def create

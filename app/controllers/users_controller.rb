@@ -2,7 +2,7 @@ class UsersController < ApplicationController
 
     def index
         users = User.all 
-        render json: users
+        render json: UserSerializer.new(users)
     end
     
     def show 
@@ -17,6 +17,13 @@ class UsersController < ApplicationController
     end
 
     def destroy
+    end
+
+
+    private
+
+    def user_params
+        params.require(user).permit(:name, :img_url)
     end
 
 end
