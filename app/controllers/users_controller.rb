@@ -2,7 +2,10 @@ class UsersController < ApplicationController
 
     def index
         users = User.all 
-        render json: UserSerializer.new(users)
+        options = {
+            include: [:notes]
+        }
+        render json: UserSerializer.new(users, options)
     end
     
     def show 
