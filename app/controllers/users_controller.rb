@@ -2,28 +2,20 @@ class UsersController < ApplicationController
 
     def index
         users = User.all 
-        render json: UserSerializer.new(users)
-    end
-    
-    def show 
-        user = User.find(params[:id])
-        render json: user
-    end
-
-    def new
-    end
-
-    def create
-    end
-
-    def destroy
+        options = {
+            include: [:notes]
+        }
+        render json: UserSerializer.new(users, options)
     end
 
 
-    private
-
-    def user_params
-        params.require(user).permit(:name, :img_url)
+    def show
+        user = User.find_by(id: params[:id])
+        options = {
+            include: [:notes]
+        }
+        render json: UserSerializer.new(user, options)
     end
+
 
 end

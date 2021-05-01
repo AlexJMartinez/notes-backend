@@ -6,22 +6,24 @@ class NotesController < ApplicationController
     end
 
     def create
-        note = Note.new(note_params)
+        note = Note.create(note_params)
     end
 
     def new 
-        note = Note.new(note_params)
+        note = Note.create(note_params) 
     end
 
     def show 
-        note = Note.find(params[:id])
-        render json: note
+        note = Note.find_by(id: params[:id])
+        options = {
+            include: [:user]
+        }
+        render json: NoteSerializer.new(note, options)
     end
 
     def destroy 
-        note = Note.find(params[:id])
-        note.delete
-        redirect_to 
+        @note = Note.find(id: params[:id]).delete
+        render json: @note
     end
 
 
